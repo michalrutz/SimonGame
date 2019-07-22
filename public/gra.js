@@ -159,7 +159,7 @@ function animateBttm(color, i) {
     }, 600);
 };
 function playBttn(color) {
-  let good = new Audio ("public/sounds/"+color+".mp3");
+  let good = new Audio ("sounds/"+color+".mp3");
     good.play();
 }
 
