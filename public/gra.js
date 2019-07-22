@@ -1,6 +1,5 @@
 //DATA Difficulty
 let difficulties = [
-  {level: "extra", numOfbttn: 9},
   {level: "hard", numOfbttn: 6},
   {level: "advanced", numOfbttn: 4},
   {level: "easy", numOfbttn: 3}
@@ -8,7 +7,6 @@ let difficulties = [
 let difficultyLevel;
 //DATA COLOR
 let colors = ["green","red","yellow","blue","pink","white","pink","white", "pink","white"];
-let icons = ["🍔","red","yellow","blue","pink","white","pink","white", "pink","white"];
 let level = 0;
 let chain = [];
 // let gameOver = false;
