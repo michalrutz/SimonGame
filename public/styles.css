@@ -1,0 +1,129 @@
+body {
+    text-align: center;
+    background-color: #011F3F;
+}
+
+button:focus {outline:0;}
+  
+.bttn {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    border-radius: 20%;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    margin:  1%;
+    color: #FEF2BF;
+    background: #011F3F;
+    filter: brightness(160%);
+}
+
+
+#green {
+    background: green;
+}
+#red {
+    background: red;
+}
+#yellow {
+    background: yellow;
+}
+#blue {
+    background: blue;
+}
+#pink {
+    background: pink;
+}
+#white {
+    background: white;
+}
+
+#green:hover, #red:hover, #blue:hover, #yellow:hover, #pink:hover, #white:hover{
+    filter: brightness(60%);
+} 
+
+/* .toggle-content {
+  	opacity: 0.2;
+	transition: opacity 400ms ease-in-out;
+}
+
+.is-visible {
+    opacity: 1;
+    transition: opacity 400ms ease-in-out;
+} */
+
+@keyframes flickerAnimation { /* flame pulses */
+    0%   { opacity:1; }
+    10%  { opacity:0; }
+    100% { opacity:1; }
+  }
+.animate-flicker {
+      opacity:1;  
+      animation: flickerAnimation 0.5s;
+}
+
+#level {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    margin:  5%;
+    color: #FEF2BF;
+  }
+
+
+
+
+
+
+
+
+  
+  #level-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    margin:  5%;
+    color: #FEF2BF;
+  }
+  
+  .container {
+    display: block;
+    width: 50%;
+    margin: auto;
+  
+  }
+  
+  .btn {
+    margin: 25px;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    border-radius: 20%;
+  }
+  
+  .game-over {
+    background-color: red;
+    opacity: 0.8;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
+  .yellow {
+    background-color: yellow;
+  }
+  
+  .pressed {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+  }
+  
