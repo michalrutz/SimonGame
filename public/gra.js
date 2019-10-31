@@ -6,14 +6,14 @@ let difficulties = [
 ];
 let difficultyLevel;
 //DATA COLOR
-let colors = ["green","red","yellow","blue","pink","white","pink","white", "pink","white"];
+let colors = ["green","red","yellow","blue","pink","white"];
 let level = 0;
 let chain = [];
 // let gameOver = false;
 
 // CREATE buttons Difficulty
 function createBttns_DifficultyLevel(){
-let difficultyBttns ="";
+let difficultyBttns = `<div id="guide"><p>remember and then repeat increasingly longer sequences of lights</p></div><br>`;
 for (let g=0; g<difficulties.length; g++){ 
   difficultyBttns+=
   `<button type="button"
@@ -32,9 +32,10 @@ function addFunToBttms_SetDifficulty(){
   var difficultyBttns = document.getElementsByClassName("bttnDifficulty");
 
   for(var i = 0; i < difficultyBttns.length; i++){
+    let level = i;
     document.getElementsByClassName("bttnDifficulty")[i]
-    .addEventListener("click", (e)=>{
-      difficultyLevel = difficulties.find( (dif) => dif.level === e.target.id ).numOfbttn;
+    .addEventListener("click", () => {
+      difficultyLevel = difficulties[level].numOfbttn;
       console.log(difficultyLevel);
       setTimeout(function (){
             startGame();
